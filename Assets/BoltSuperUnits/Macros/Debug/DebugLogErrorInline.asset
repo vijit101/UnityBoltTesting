@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DebugLogErrorInline
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"Exit
+      the graph","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"System.String","key":"message","label":"Message","summary":"The
+      message need to log","hideLabel":false}],"valueOutputDefinitions":[],"title":"Debug
+      Log Error Inline","summary":"Debug.Log Error inline message","pan":{"x":-909.1021,"y":-245.1727},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-582.0,"y":-322.0},"guid":"9b3d81b4-0378-4d01-b04c-ddaddf61e7a5","$version":"A","$type":"Bolt.GraphInput","$id":"12"},{"defaultValues":{},"position":{"x":-136.0,"y":-320.0},"guid":"48b7261f-da97-4d37-8e49-31b71187cd11","$version":"A","$type":"Bolt.GraphOutput","$id":"14"},{"chainable":false,"member":{"name":"LogError","parameterTypes":["System.Object"],"targetType":"UnityEngine.Debug","targetTypeName":"UnityEngine.Debug","$version":"A"},"defaultValues":{},"position":{"x":-360.0,"y":-322.0},"guid":"da58e1cf-4d47-4aee-ae1f-b6e6d557234c","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"sourceUnit":{"$ref":"12"},"sourceKey":"enter","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"ae37b541-5a8f-4e5c-a8d0-e710d2f119ec","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"exit","destinationUnit":{"$ref":"14"},"destinationKey":"exit","guid":"a69d76c0-7c7b-42cf-b013-3377dd21a8e5","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"message","destinationUnit":{"$ref":"16"},"destinationKey":"%message","guid":"a1a21423-5569-49c4-b982-8e4614a5d074","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

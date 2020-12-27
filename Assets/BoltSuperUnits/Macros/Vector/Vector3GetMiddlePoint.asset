@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector3GetMiddlePoint
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      enter control","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"The
+      exit control input","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"point1","label":"Point
+      1","summary":"The first point","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"point2","label":"Point
+      2","summary":"The second point","hideLabel":false}],"valueOutputDefinitions":[{"_type":"UnityEngine.Vector3","key":"result","label":"Result","summary":"The
+      result","hideLabel":false}],"title":"Vector3 Get Middle Point","summary":"Get
+      the middle point of two point","pan":{"x":91.2439,"y":-76.70051},"zoom":0.8,"elements":[{"defaultValues":{},"position":{"x":-330.0,"y":-302.0},"guid":"b8abcca3-8ac9-491d-abf0-a073d981757c","$version":"A","$type":"Bolt.GraphInput","$id":"14"},{"defaultValues":{},"position":{"x":363.0,"y":-302.0},"guid":"64e46bea-08d0-4409-965e-801e8c6c9628","$version":"A","$type":"Bolt.GraphOutput","$id":"16"},{"defaultValues":{"b":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":-116.0,"y":-206.0},"guid":"f625c194-3640-4292-9809-002aa905f22e","$version":"A","$type":"Bolt.Vector3Add","$id":"18"},{"defaultValues":{},"position":{"x":46.0,"y":-206.0},"guid":"aae31f99-626a-4480-a0b8-ed3e1c09e95b","$version":"A","$type":"Bolt.GenericDivide","$id":"20"},{"type":"System.Int32","value":{"$content":2,"$type":"System.Int32"},"defaultValues":{},"position":{"x":-86.0,"y":-82.0},"guid":"c7864d9b-6438-4b55-8ffc-5a658589ee72","$version":"A","$type":"Bolt.Literal","$id":"22"},{"sourceUnit":{"$ref":"14"},"sourceKey":"enter","destinationUnit":{"$ref":"16"},"destinationKey":"exit","guid":"f3562e85-55d6-4b22-93c2-1cba43f19ad7","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"point1","destinationUnit":{"$ref":"18"},"destinationKey":"a","guid":"02d07d48-1376-45cf-9442-6666ff93a532","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"point2","destinationUnit":{"$ref":"18"},"destinationKey":"b","guid":"aa8e795e-0824-4a02-ac58-1c361925ee61","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"sum","destinationUnit":{"$ref":"20"},"destinationKey":"dividend","guid":"515fc1ce-aefd-4177-98fc-95b8173fae18","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"output","destinationUnit":{"$ref":"20"},"destinationKey":"divisor","guid":"fd0fe378-71b9-422c-8e6a-646e4711bfcb","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"quotient","destinationUnit":{"$ref":"16"},"destinationKey":"result","guid":"82741b1a-9e04-4199-8cee-b1c4b0adae3e","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

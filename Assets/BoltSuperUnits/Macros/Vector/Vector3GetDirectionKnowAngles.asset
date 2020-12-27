@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector3GetDirectionKnowAngles
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      enter control","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"The
+      exit control input","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"UnityEngine.Transform","key":"from","label":"From","summary":"The
+      from vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"anglex","label":"X
+      Angle","summary":null,"hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"angley","label":"Y
+      Angle","summary":null,"hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"anglez","label":"Z
+      Angle","summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"UnityEngine.Vector3","key":"result","label":"Result","summary":"The
+      result","hideLabel":false}],"title":"Vector3GetDirectionKnowAngles","summary":"","pan":{"x":-1340.977,"y":-147.4976},"zoom":0.4999999,"elements":[{"defaultValues":{},"position":{"x":-1941.0,"y":-371.0},"guid":"b8abcca3-8ac9-491d-abf0-a073d981757c","$version":"A","$type":"Bolt.GraphInput","$id":"16"},{"member":{"name":"forward","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-1559.0,"y":-284.0},"guid":"98628921-b4e8-4739-a664-fdef9314cfc0","$version":"A","$type":"Bolt.GetMember","$id":"18"},{"defaultValues":{},"position":{"x":-955.0,"y":-369.0},"guid":"64e46bea-08d0-4409-965e-801e8c6c9628","$version":"A","$type":"Bolt.GraphOutput","$id":"21"},{"defaultValues":{},"position":{"x":-1197.0,"y":-217.0},"guid":"2b9ee48d-69f0-467d-b8ef-18676310940c","$version":"A","$type":"Bolt.GenericMultiply","$id":"23"},{"chainable":false,"member":{"name":"Euler","parameterTypes":["System.Single","System.Single","System.Single"],"targetType":"UnityEngine.Quaternion","targetTypeName":"UnityEngine.Quaternion","$version":"A"},"defaultValues":{"%x":{"$content":0.0,"$type":"System.Single"},"%y":{"$content":0.0,"$type":"System.Single"},"%z":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-1555.0,"y":-123.0},"guid":"e2d8f319-fb3e-4f23-a1d5-c76b296162d4","$version":"A","$type":"Bolt.InvokeMember","$id":"25"},{"sourceUnit":{"$ref":"16"},"sourceKey":"enter","destinationUnit":{"$ref":"21"},"destinationKey":"exit","guid":"b846ccf1-c3f5-49eb-aba2-f46916e98f55","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"25"},"sourceKey":"result","destinationUnit":{"$ref":"23"},"destinationKey":"a","guid":"a8755d6b-6f66-4d17-b066-3f9a711ab634","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"from","destinationUnit":{"$ref":"18"},"destinationKey":"target","guid":"95a2002b-9c3f-413b-9c94-e6ee4dbc857f","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"23"},"destinationKey":"b","guid":"919a7032-6a1e-4383-ad65-388030981568","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"anglex","destinationUnit":{"$ref":"25"},"destinationKey":"%x","guid":"66418204-ad5e-47bc-bd92-e1ddc46aab18","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"angley","destinationUnit":{"$ref":"25"},"destinationKey":"%y","guid":"2912af91-a4f6-4bb0-b845-868436d0332b","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"anglez","destinationUnit":{"$ref":"25"},"destinationKey":"%z","guid":"5741bdbe-e08d-4e5a-b58a-1c6a4ed5ce36","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"product","destinationUnit":{"$ref":"21"},"destinationKey":"result","guid":"987ee37a-1d68-41da-8723-25bfb25f3a4e","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector3GetDirectionFromAToB
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      enter control","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"The
+      exit control input","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"from","label":"From","summary":"The
+      from vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"to","label":"To","summary":"The
+      destination vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":true,"$type":"System.Boolean"},"_type":"System.Boolean","key":"IsNormalize","label":"IsNormalize","summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"UnityEngine.Vector3","key":"result","label":"Result","summary":"The
+      result","hideLabel":false}],"title":"Vector3GetDirectionFromAToB","summary":"Get
+      direction of two vector3","pan":{"x":38.93757,"y":-148.4505},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-303.0,"y":-308.0},"guid":"b8abcca3-8ac9-491d-abf0-a073d981757c","$version":"A","$type":"Bolt.GraphInput","$id":"15"},{"defaultValues":{},"position":{"x":303.0,"y":-308.0},"guid":"64e46bea-08d0-4409-965e-801e8c6c9628","$version":"A","$type":"Bolt.GraphOutput","$id":"17"},{"defaultValues":{"minuend":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"subtrahend":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":-138.0,"y":-142.0},"guid":"f506798d-6d4f-44b5-b718-84a5cd23d43f","$version":"A","$type":"Bolt.Vector3Subtract","$id":"19"},{"defaultValues":{},"position":{"x":144.0,"y":-185.0},"guid":"ec13c3e1-ae77-4019-bd0e-25e1e71b2508","$version":"A","$type":"Bolt.SelectUnit","$id":"21"},{"defaultValues":{},"position":{"x":0.0,"y":-15.0},"guid":"b585e3f1-9e3c-43e1-80d8-979bd2210a00","$version":"A","$type":"Bolt.Vector3Normalize","$id":"23"},{"sourceUnit":{"$ref":"15"},"sourceKey":"enter","destinationUnit":{"$ref":"17"},"destinationKey":"exit","guid":"90905435-c437-4d23-b3e9-0279d7f821f6","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"from","destinationUnit":{"$ref":"19"},"destinationKey":"subtrahend","guid":"f0abec06-f4e4-465f-bac3-20f3cfd6c01c","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"to","destinationUnit":{"$ref":"19"},"destinationKey":"minuend","guid":"2665465c-6f66-4c7c-b154-a53c07d61388","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"IsNormalize","destinationUnit":{"$ref":"21"},"destinationKey":"condition","guid":"5ee9e4ec-cf4a-4ac7-a98f-7238b42f033c","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"difference","destinationUnit":{"$ref":"21"},"destinationKey":"ifFalse","guid":"d8790670-7d71-43a4-85af-fb4cf088680f","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"difference","destinationUnit":{"$ref":"23"},"destinationKey":"input","guid":"5de3b244-0989-4be8-93d9-aa8632d4395a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"output","destinationUnit":{"$ref":"21"},"destinationKey":"ifTrue","guid":"ff2b3615-d68c-4e1b-b12b-fe24de08b917","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"selection","destinationUnit":{"$ref":"17"},"destinationKey":"result","guid":"d7a458b5-7461-4462-aa3e-45efa0c03726","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

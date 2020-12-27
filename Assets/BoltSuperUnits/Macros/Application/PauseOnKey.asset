@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: PauseOnKey
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"exit","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":"None","$type":"UnityEngine.KeyCode"},"_type":"UnityEngine.KeyCode","key":"key","label":null,"summary":null,"hideLabel":false},{"hasDefaultValue":true,"defaultValue":null,"_type":"UnityEngine.GameObject","key":"pausepanel","label":"Pause
+      Panel","summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"PauseOnKey","summary":null,"pan":{"x":224.1347,"y":-7.43634},"zoom":0.6999999,"elements":[{"defaultValues":{},"position":{"x":-244.0,"y":-130.0},"guid":"6935565b-0415-44d7-8453-a2ff9e213748","$version":"A","$type":"Bolt.GraphInput","$id":"12"},{"chainable":false,"member":{"name":"timeScale","parameterTypes":null,"targetType":"UnityEngine.Time","targetTypeName":"UnityEngine.Time","$version":"A"},"defaultValues":{"input":{"$content":0.0,"$type":"System.Single"}},"position":{"x":236.0,"y":-129.0},"guid":"d93236fd-36a5-46c6-a6af-996ae995a744","$version":"A","$type":"Bolt.SetMember","$id":"14"},{"coroutine":false,"defaultValues":{"key":{"$content":"Space","$type":"UnityEngine.KeyCode"},"action":{"$content":"Down","$type":"Ludiq.PressState"}},"position":{"x":15.0,"y":-129.0},"guid":"7caec551-2668-4da7-b762-019558319190","$version":"A","$type":"Bolt.OnKeyboardInput","$id":"17"},{"chainable":false,"member":{"name":"SetActive","parameterTypes":["System.Boolean"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"target":null,"%value":{"$content":true,"$type":"System.Boolean"}},"position":{"x":405.0,"y":76.0},"guid":"7116813b-eab8-48e8-a9c6-84ae69d3060a","$version":"A","$type":"Bolt.InvokeMember","$id":"19"},{"sourceUnit":{"$ref":"17"},"sourceKey":"trigger","destinationUnit":{"$ref":"14"},"destinationKey":"assign","guid":"6883aaff-592b-4a52-9183-cf3171c05583","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"assigned","destinationUnit":{"$ref":"19"},"destinationKey":"enter","guid":"1390c832-192e-47ba-9c8f-617e4c851655","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"key","destinationUnit":{"$ref":"17"},"destinationKey":"key","guid":"cdd9fdc9-9335-476b-b484-684ce6ec97a6","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"pausepanel","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"de3db60e-a842-461a-9355-cca48ff80c1e","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

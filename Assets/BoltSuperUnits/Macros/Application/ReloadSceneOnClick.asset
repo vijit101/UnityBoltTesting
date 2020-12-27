@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: ReloadSceneOnClick
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":null,"_type":null,"key":"","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"ReloadSceneOnClick","summary":null,"pan":{"x":-3.25412,"y":-69.14814},"zoom":0.9,"elements":[{"chainable":false,"member":{"name":"LoadScene","parameterTypes":["System.String"],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{"%sceneName":{"$content":"","$type":"System.String"}},"position":{"x":262.0,"y":-199.0},"guid":"d62c39eb-b0d2-4000-af34-b989b5a5ea4a","$version":"A","$type":"Bolt.InvokeMember","$id":"10"},{"chainable":false,"member":{"name":"GetActiveScene","parameterTypes":[],"targetType":"UnityEngine.SceneManagement.SceneManager","targetTypeName":"UnityEngine.SceneManagement.SceneManager","$version":"A"},"defaultValues":{},"position":{"x":-86.0,"y":28.0},"guid":"f69c7162-28a1-4eb2-bf74-a2d4d55b7e84","$version":"A","$type":"Bolt.InvokeMember","$id":"13"},{"member":{"name":"name","parameterTypes":null,"targetType":"UnityEngine.SceneManagement.Scene","targetTypeName":"UnityEngine.SceneManagement.Scene","$version":"A"},"defaultValues":{},"position":{"x":120.0,"y":-48.0},"guid":"f808a44b-6aff-454b-9ebc-16789c9b19fd","$version":"A","$type":"Bolt.GetMember","$id":"16"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-105.0,"y":-172.0},"guid":"0d43481f-fb1e-4c3a-bb05-d76bfcbc5c31","$version":"A","$type":"Bolt.OnButtonClick"},{"sourceUnit":{"$ref":"13"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"target","guid":"35f11768-066f-4510-8ecb-1befd5293b8c","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"10"},"destinationKey":"%sceneName","guid":"8b8d48fc-262c-4528-b77b-8f7caf6bb5dc","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

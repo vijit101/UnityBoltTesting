@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DivisableBy
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"a","label":"A","summary":null,"hideLabel":false},{"hasDefaultValue":false,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"b","label":"B","summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"result","label":"A
+      divisable By B","summary":null,"hideLabel":false}],"title":null,"summary":null,"pan":{"x":12.91262,"y":-57.9487},"zoom":0.8,"elements":[{"defaultValues":{},"position":{"x":-359.0,"y":-136.0},"guid":"25798abf-c7fd-4281-b428-d00b7a58150d","$version":"A","$type":"Bolt.GraphInput","$id":"13"},{"defaultValues":{},"position":{"x":200.0,"y":-138.0},"guid":"dc127107-3153-4be9-8d61-3ab72c792f5e","$version":"A","$type":"Bolt.GraphOutput","$id":"15"},{"defaultValues":{"dividend":{"$content":1.0,"$type":"System.Single"},"divisor":{"$content":1.0,"$type":"System.Single"}},"position":{"x":-213.0,"y":-136.0},"guid":"734a0581-b7e2-4714-b3a5-1e44f934d15d","$version":"A","$type":"Bolt.ScalarModulo","$id":"17"},{"chainable":false,"member":{"name":"Equals","parameterTypes":["System.Object"],"targetType":"System.Single","targetTypeName":"System.Single","$version":"A"},"defaultValues":{"target":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-17.0,"y":-146.0},"guid":"864381f3-a20f-4620-a3e9-46d0efc9b4fe","$version":"A","$type":"Bolt.InvokeMember","$id":"19"},{"sourceUnit":{"$ref":"17"},"sourceKey":"remainder","destinationUnit":{"$ref":"19"},"destinationKey":"%obj","guid":"39f1f69c-7ff4-4416-ac00-8acf804d983e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"result","destinationUnit":{"$ref":"15"},"destinationKey":"result","guid":"f2e5ec36-6f78-4fa6-a7ea-cf2ebd13c59e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"a","destinationUnit":{"$ref":"17"},"destinationKey":"dividend","guid":"4c763abd-3cf5-483e-9e22-83e3b7640d8d","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"b","destinationUnit":{"$ref":"17"},"destinationKey":"divisor","guid":"03f6dca6-97f0-499b-8ecf-58758b0dc615","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

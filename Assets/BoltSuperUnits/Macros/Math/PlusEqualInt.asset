@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: PlusEqualInt
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"Exit
+      the graph","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":0,"$type":"System.Int32"},"_type":"System.Int32","key":"number","label":"A","summary":"The
+      input number","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":0,"$type":"System.Int32"},"_type":"System.Int32","key":"amount","label":"Amount","summary":"The
+      mount to add","hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Int32","key":"result","label":"A+=","summary":"The
+      output result\n","hideLabel":false}],"title":"PlusEqual Int","summary":"Add
+      an amount to an int value","pan":{"x":-147.1259,"y":-188.0762},"zoom":0.9,"elements":[{"defaultValues":{},"position":{"x":-364.0,"y":-262.0},"guid":"dee4557a-0c5a-4626-838c-785cb9bee50d","$version":"A","$type":"Bolt.GenericAdd","$id":"14"},{"defaultValues":{},"position":{"x":-565.0,"y":-357.0},"guid":"9b3d81b4-0378-4d01-b04c-ddaddf61e7a5","$version":"A","$type":"Bolt.GraphInput","$id":"16"},{"defaultValues":{},"position":{"x":-119.0,"y":-357.0},"guid":"48b7261f-da97-4d37-8e49-31b71187cd11","$version":"A","$type":"Bolt.GraphOutput","$id":"18"},{"sourceUnit":{"$ref":"16"},"sourceKey":"enter","destinationUnit":{"$ref":"18"},"destinationKey":"exit","guid":"31c36d29-1adb-4b47-83ab-9e3ba46a951e","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"number","destinationUnit":{"$ref":"14"},"destinationKey":"a","guid":"69d50277-7d3b-49f2-a1aa-83660d8b4471","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"amount","destinationUnit":{"$ref":"14"},"destinationKey":"b","guid":"4ced1d84-5c2b-42e0-bf4f-8abc14037f52","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"sum","destinationUnit":{"$ref":"18"},"destinationKey":"result","guid":"3b8f6e78-60a9-4882-a778-2714b994ba19","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector3IsParallel
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      enter control","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"The
+      exit control input","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"vector1","label":"First
+      Vector","summary":"The first input vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"vector2","label":"Second
+      Vector","summary":"The second vector","hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"result","label":"Result","summary":"The
+      result","hideLabel":false}],"title":"Vector3 Is Parallel","summary":"Check
+      if two vector 3 is parallel","pan":{"x":118.8694,"y":-94.21617},"zoom":0.6999999,"elements":[{"defaultValues":{},"position":{"x":-358.0,"y":-233.0},"guid":"b8abcca3-8ac9-491d-abf0-a073d981757c","$version":"A","$type":"Bolt.GraphInput","$id":"14"},{"defaultValues":{},"position":{"x":364.0,"y":-250.0},"guid":"64e46bea-08d0-4409-965e-801e8c6c9628","$version":"A","$type":"Bolt.GraphOutput","$id":"16"},{"chainable":false,"member":{"name":"Equals","parameterTypes":["System.Object"],"targetType":"UnityEngine.Vector3","targetTypeName":"UnityEngine.Vector3","$version":"A"},"defaultValues":{"target":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":117.0,"y":-119.0},"guid":"99318f80-80b8-4ce1-a6f0-8e37015d97a7","$version":"A","$type":"Bolt.InvokeMember","$id":"18"},{"defaultValues":{},"position":{"x":-116.0,"y":-144.0},"guid":"989b6afc-df90-4d30-9e9f-b239536750ca","$version":"A","$type":"Bolt.Vector3Normalize","$id":"21"},{"defaultValues":{},"position":{"x":-115.0,"y":-34.0},"guid":"297682d0-a4c7-4786-b73e-9ddff9818020","$version":"A","$type":"Bolt.Vector3Normalize","$id":"23"},{"sourceUnit":{"$ref":"14"},"sourceKey":"enter","destinationUnit":{"$ref":"16"},"destinationKey":"exit","guid":"7f9b4686-d96a-4134-9632-b994af8cbd0d","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"result","guid":"e0bcf4d4-e313-4f3d-a651-3a7cff5b03af","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"vector1","destinationUnit":{"$ref":"21"},"destinationKey":"input","guid":"7a649f06-b2ec-4289-8ccb-e88e38545119","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"vector2","destinationUnit":{"$ref":"23"},"destinationKey":"input","guid":"936bf2cf-2b04-42e0-904b-86c14ad62213","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"output","destinationUnit":{"$ref":"18"},"destinationKey":"target","guid":"26dfe145-3f57-4c49-b319-73c390b54da2","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"output","destinationUnit":{"$ref":"18"},"destinationKey":"%other","guid":"cb5606b5-0241-4a49-b301-c59b49e8ea0e","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

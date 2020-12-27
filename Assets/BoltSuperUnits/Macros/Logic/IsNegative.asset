@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: IsNegative
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"input","label":"Input","summary":null,"hideLabel":true}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"result","label":null,"summary":null,"hideLabel":true}],"title":"IsPositive","summary":"Check
+      if a number is positive or not","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-211.0,"y":-74.0},"guid":"06f8f506-228b-48d4-9c8a-84bf5b6580d7","$version":"A","$type":"Bolt.GraphInput","$id":"11"},{"defaultValues":{},"position":{"x":112.0,"y":-74.0},"guid":"2620b39e-1b5e-4625-97f8-8e8f59f24688","$version":"A","$type":"Bolt.GraphOutput","$id":"13"},{"numeric":true,"defaultValues":{"b":{"$content":0.0,"$type":"System.Single"}},"position":{"x":-72.0,"y":-85.0},"guid":"94bdaab5-c479-4878-ada6-74bb1e41c1df","$version":"A","$type":"Bolt.Less","$id":"15"},{"sourceUnit":{"$ref":"11"},"sourceKey":"input","destinationUnit":{"$ref":"15"},"destinationKey":"a","guid":"e0b32889-4b73-4752-9263-8e2ebe37ba1e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"comparison","destinationUnit":{"$ref":"13"},"destinationKey":"result","guid":"7741f00b-fcb4-4e75-9d5f-a7870aa3563c","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

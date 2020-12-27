@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector3IsPointInLine
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      enter control","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"The
+      exit control input","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"_type":"UnityEngine.Vector2","key":"startpoint","label":"Start
+      Point","summary":"The starting point of the line","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"_type":"UnityEngine.Vector2","key":"endpoint","label":"End
+      Point","summary":"The ending point of the line","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"_type":"UnityEngine.Vector2","key":"targetpoint","label":"Target
+      Point","summary":"The point need to be calculate distance to the line","hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"result","label":"Result","summary":"The
+      result","hideLabel":false}],"title":"Vector2 is point in line","summary":"Check
+      if a point in a line (3D)","pan":{"x":261.4066,"y":-272.213},"zoom":0.4999999,"elements":[{"defaultValues":{},"position":{"x":-389.0,"y":-363.0},"guid":"b8abcca3-8ac9-491d-abf0-a073d981757c","$version":"A","$type":"Bolt.GraphInput","$id":"15"},{"defaultValues":{},"position":{"x":481.0,"y":-356.0},"guid":"64e46bea-08d0-4409-965e-801e8c6c9628","$version":"A","$type":"Bolt.GraphOutput","$id":"17"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"startpoint":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"endpoint":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"targetpoint":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"}},"position":{"x":-107.0,"y":-361.0},"guid":"b72a1a0d-9d53-4d48-a67e-3f474216a500","$version":"A","$type":"Bolt.SuperUnit","$id":"19"},{"chainable":false,"member":{"name":"Equals","parameterTypes":["System.Single"],"targetType":"System.Single","targetTypeName":"System.Single","$version":"A"},"defaultValues":{"target":{"$content":0.0,"$type":"System.Single"},"%obj":{"$content":0.0,"$type":"System.Single"}},"position":{"x":272.0,"y":-360.0},"guid":"8db156f5-abe3-4372-891c-1125dc3088eb","$version":"A","$type":"Bolt.InvokeMember","$id":"22"},{"sourceUnit":{"$ref":"19"},"sourceKey":"exit","destinationUnit":{"$ref":"22"},"destinationKey":"enter","guid":"cb78d511-f3c2-425e-a692-993deadc6a4b","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"enter","destinationUnit":{"$ref":"19"},"destinationKey":"enter","guid":"55289690-a6a8-4c6a-bf30-4151546c9455","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"exit","destinationUnit":{"$ref":"17"},"destinationKey":"exit","guid":"ef317f00-cae3-4735-bf6c-71106bc82b15","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"result","destinationUnit":{"$ref":"22"},"destinationKey":"target","guid":"7f621607-1bd5-4755-a54e-ff37ccee33f3","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"startpoint","destinationUnit":{"$ref":"19"},"destinationKey":"startpoint","guid":"81e113ee-dd51-4749-9d6f-30bc4e37087f","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"endpoint","destinationUnit":{"$ref":"19"},"destinationKey":"endpoint","guid":"f34a5507-438c-4d84-9e06-e1e2c1c8bbfe","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"targetpoint","destinationUnit":{"$ref":"19"},"destinationKey":"targetpoint","guid":"d6cd1c15-860b-4f0c-a0f4-10210e5582ee","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"result","destinationUnit":{"$ref":"17"},"destinationKey":"result","guid":"8ab27fce-abe9-4b43-bd7a-3757d4a23ead","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 378b0b85609cf63469e78b1ce50f6f37, type: 2}

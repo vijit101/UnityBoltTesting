@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DecrementInt
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"Exit
+      the graph","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":0,"$type":"System.Int32"},"_type":"System.Int32","key":"number","label":"A","summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Int32","key":"after","label":"A--","summary":"Value
+      after increase","hideLabel":false}],"title":"Decrement Int","summary":"Subtract
+      an int value to 1","pan":{"x":-243.8636,"y":-47.59463},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-554.0,"y":-235.0},"guid":"9b3d81b4-0378-4d01-b04c-ddaddf61e7a5","$version":"A","$type":"Bolt.GraphInput","$id":"13"},{"defaultValues":{},"position":{"x":0.0,"y":-239.0},"guid":"48b7261f-da97-4d37-8e49-31b71187cd11","$version":"A","$type":"Bolt.GraphOutput","$id":"15"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"number":{"$content":0,"$type":"System.Int32"},"amount":{"$content":-1,"$type":"System.Int32"}},"position":{"x":-314.0,"y":-131.0},"guid":"440ab8bd-fdc8-4090-9891-e7cf464b8ca1","$version":"A","$type":"Bolt.SuperUnit","$id":"17"},{"sourceUnit":{"$ref":"13"},"sourceKey":"enter","destinationUnit":{"$ref":"15"},"destinationKey":"exit","guid":"bf1c2160-10fd-401a-87b5-3fe9f3896250","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"result","destinationUnit":{"$ref":"15"},"destinationKey":"after","guid":"16edfd4e-ab44-44fa-a9b2-20e9c953acd3","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"number","destinationUnit":{"$ref":"17"},"destinationKey":"number","guid":"656e9448-d54b-4313-9f8a-b5c58ec55fbc","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 496240d6497c36f4cbf71aa69999b37e, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: InverseNumber
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":0.0,"$type":"System.Single"},"_type":"System.Single","key":"inputnumber","label":"Input
+      Number","summary":null,"hideLabel":true}],"valueOutputDefinitions":[{"_type":"System.Single","key":"outputnumber","label":"Output
+      Number","summary":null,"hideLabel":true}],"title":"InverseNumber","summary":"Invert
+      a number value","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-268.0,"y":-102.0},"guid":"77fe3f29-b364-4cc1-861e-9cd2b1c8b485","$version":"A","$type":"Bolt.GraphInput","$id":"11"},{"defaultValues":{},"position":{"x":135.0,"y":-102.0},"guid":"79884e11-f614-4793-b83b-f540e3e71541","$version":"A","$type":"Bolt.GraphOutput","$id":"13"},{"defaultValues":{"b":{"$content":-1.0,"$type":"System.Single"}},"position":{"x":-95.0,"y":-113.0},"guid":"a0a10037-d807-4a2b-a467-168a599d1653","$version":"A","$type":"Bolt.ScalarMultiply","$id":"15"},{"sourceUnit":{"$ref":"11"},"sourceKey":"inputnumber","destinationUnit":{"$ref":"15"},"destinationKey":"a","guid":"5da99a18-7ac9-4e0f-97a8-dfb11fca318e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"product","destinationUnit":{"$ref":"13"},"destinationKey":"outputnumber","guid":"3d909c4c-9fd2-42eb-9edb-ef89fcae11c7","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

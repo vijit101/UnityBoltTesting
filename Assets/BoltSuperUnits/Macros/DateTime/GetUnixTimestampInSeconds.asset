@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: GetUnixTimestampInSeconds
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":null,"_type":"System.DateTime","key":"inputdatetime","label":"Input
+      Datetime","summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Int64","key":"result","label":"Result","summary":"UNIX
+      timestamp in second","hideLabel":false}],"title":"GetUnixTimestampInSeconds","summary":null,"pan":{"x":-12.5,"y":0.4722237},"zoom":0.9,"elements":[{"defaultValues":{},"position":{"x":-394.0,"y":-203.0},"guid":"91c88d61-9c23-47c4-bfea-6f1e72d54df3","$version":"A","$type":"Bolt.GraphInput","$id":"11"},{"chainable":false,"member":{"name":".ctor","parameterTypes":["System.Int32","System.Int32","System.Int32"],"targetType":"System.DateTime","targetTypeName":"System.DateTime","$version":"A"},"defaultValues":{"%year":{"$content":1970,"$type":"System.Int32"},"%month":{"$content":1,"$type":"System.Int32"},"%day":{"$content":1,"$type":"System.Int32"}},"position":{"x":-393.0,"y":-54.0},"guid":"cec610b6-489d-43fe-8fdc-96aa115bafa5","$version":"A","$type":"Bolt.InvokeMember","$id":"13"},{"chainable":false,"member":{"name":"Subtract","parameterTypes":["System.DateTime"],"targetType":"System.DateTime","targetTypeName":"System.DateTime","$version":"A"},"defaultValues":{},"position":{"x":-204.0,"y":-81.0},"guid":"edd0005a-0f56-4570-a185-0bdbad7bf03b","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"member":{"name":"TotalSeconds","parameterTypes":null,"targetType":"System.TimeSpan","targetTypeName":"System.TimeSpan","$version":"A"},"defaultValues":{},"position":{"x":-52.0,"y":-147.0},"guid":"db5d897c-673e-4a8a-b254-88c3048a4017","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"defaultValues":{},"position":{"x":157.0,"y":-168.0},"guid":"63afebf1-217c-4bc8-a203-003f21567133","$version":"A","$type":"Bolt.GraphOutput","$id":"22"},{"sourceUnit":{"$ref":"13"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"%value","guid":"d9bf4774-9a06-4a5e-a2c7-21c6ff65eaef","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"result","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"11785b0b-cce9-4a26-a915-2c4aa31a0f32","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"22"},"destinationKey":"result","guid":"b266b9c7-37a1-4507-9675-fea870290c8b","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"inputdatetime","destinationUnit":{"$ref":"16"},"destinationKey":"target","guid":"17b31c69-1ef9-4a02-a990-9e38ec9fffe3","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

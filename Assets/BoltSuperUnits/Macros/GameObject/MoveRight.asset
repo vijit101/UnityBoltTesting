@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: MoveRight
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"UnityEngine.GameObject","key":"object","label":null,"summary":null,"hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":1.0,"$type":"System.Single"},"_type":"System.Single","key":"speed","label":"","summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"Move
+      Right","summary":null,"pan":{"x":-210.0271,"y":34.80524},"zoom":0.5,"elements":[{"defaultValues":{},"position":{"x":-466.0,"y":-127.0},"guid":"de454baa-bb94-4242-b8a0-a351f5bb8681","$version":"A","$type":"Bolt.GraphInput","$id":"13"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{"object":null,"speed":{"$content":1.0,"$type":"System.Single"}},"position":{"x":-96.0,"y":-125.0},"guid":"428f14d5-e1e0-458d-9bc8-01d73813be4a","$version":"A","$type":"Bolt.SuperUnit","$id":"15"},{"nest":{"source":"Macro","macro":1,"embed":null},"defaultValues":{},"position":{"x":-325.0,"y":97.0},"guid":"63dbf6c1-5b41-41a0-a3c4-47ffba7740c7","$version":"A","$type":"Bolt.SuperUnit","$id":"18"},{"sourceUnit":{"$ref":"13"},"sourceKey":"enter","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"b2b892e8-919f-4d7f-828e-aa53c13b8e9a","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"object","destinationUnit":{"$ref":"15"},"destinationKey":"object","guid":"ab4a892c-bf15-49b3-bc19-67aacf8ab9b6","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"speed","destinationUnit":{"$ref":"15"},"destinationKey":"speed","guid":"9c883f1f-fc9b-48cf-9afa-f60eea39e987","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"object","destinationUnit":{"$ref":"18"},"destinationKey":"gameobject","guid":"ac22c64e-5701-4233-aea9-62e1b66dca5b","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"rightvector","destinationUnit":{"$ref":"15"},"destinationKey":"Direction","guid":"ed56680f-fac1-45fa-aa0d-51d9f9176d57","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: d98e8cfaac97125488315cd8f7bcf8c0, type: 2}
+    - {fileID: 11400000, guid: 8c0d4043c2f345a4696392b969e47cab, type: 2}

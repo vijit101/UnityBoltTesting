@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector2GetDirection
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      enter control","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"The
+      exit control input","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"_type":"UnityEngine.Vector2","key":"from","label":"From","summary":"The
+      from vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"_type":"UnityEngine.Vector2","key":"to","label":"To","summary":"The
+      destination vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"$content":true,"$type":"System.Boolean"},"_type":"System.Boolean","key":"IsNormalize","label":"IsNormalize","summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"UnityEngine.Vector2","key":"result","label":"Result","summary":"The
+      result","hideLabel":false}],"title":"Vector2 Get Direction","summary":"Get
+      direction of two vector2","pan":{"x":38.93757,"y":-148.4505},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-303.0,"y":-308.0},"guid":"b8abcca3-8ac9-491d-abf0-a073d981757c","$version":"A","$type":"Bolt.GraphInput","$id":"15"},{"defaultValues":{},"position":{"x":303.0,"y":-308.0},"guid":"64e46bea-08d0-4409-965e-801e8c6c9628","$version":"A","$type":"Bolt.GraphOutput","$id":"17"},{"defaultValues":{},"position":{"x":144.0,"y":-185.0},"guid":"ec13c3e1-ae77-4019-bd0e-25e1e71b2508","$version":"A","$type":"Bolt.SelectUnit","$id":"19"},{"defaultValues":{"minuend":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"subtrahend":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"}},"position":{"x":-138.0,"y":-142.0},"guid":"25bb6a8f-bfc6-4694-af08-ae6c420b3f24","$version":"A","$type":"Bolt.Vector2Subtract","$id":"21"},{"defaultValues":{},"position":{"x":0.0,"y":-15.0},"guid":"74441894-d4dc-4392-8f87-f14b7cf2c26e","$version":"A","$type":"Bolt.Vector2Normalize","$id":"23"},{"sourceUnit":{"$ref":"15"},"sourceKey":"enter","destinationUnit":{"$ref":"17"},"destinationKey":"exit","guid":"539dcd24-d138-4539-a1f3-45ba00f36662","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"IsNormalize","destinationUnit":{"$ref":"19"},"destinationKey":"condition","guid":"83386b87-8fdb-49da-8549-90bb9f7f6a73","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"selection","destinationUnit":{"$ref":"17"},"destinationKey":"result","guid":"e7deaf62-0ae9-477f-9ad9-a7309ed2c953","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"to","destinationUnit":{"$ref":"21"},"destinationKey":"minuend","guid":"2e7af4ca-4487-43fe-aee0-81405015c739","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"from","destinationUnit":{"$ref":"21"},"destinationKey":"subtrahend","guid":"245ee453-fdfa-4b90-8cb7-fb552a1c6b33","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"difference","destinationUnit":{"$ref":"19"},"destinationKey":"ifFalse","guid":"570aa018-ce00-4fff-94ec-36144f09c5e9","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"difference","destinationUnit":{"$ref":"23"},"destinationKey":"input","guid":"0a350c0b-a404-4114-8f6a-087bdfb33151","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"output","destinationUnit":{"$ref":"19"},"destinationKey":"ifTrue","guid":"832346ae-4f9a-48d1-b156-acab028543f7","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DebugLogErrorInlineContext
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"Exit
+      the graph","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"System.String","key":"message","label":"Message","summary":"The
+      message need to log","hideLabel":false},{"hasDefaultValue":false,"defaultValue":null,"_type":"UnityEngine.Object","key":"context","label":"Context","summary":"The
+      object to which message applies","hideLabel":false}],"valueOutputDefinitions":[],"title":"Debug
+      Log Error Inline Context","summary":"Debug.Log Error inline message with context","pan":{"x":-351.6068,"y":-128.1069},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-582.0,"y":-322.0},"guid":"9b3d81b4-0378-4d01-b04c-ddaddf61e7a5","$version":"A","$type":"Bolt.GraphInput","$id":"13"},{"defaultValues":{},"position":{"x":-136.0,"y":-320.0},"guid":"48b7261f-da97-4d37-8e49-31b71187cd11","$version":"A","$type":"Bolt.GraphOutput","$id":"15"},{"chainable":false,"member":{"name":"LogError","parameterTypes":["System.Object","UnityEngine.Object"],"targetType":"UnityEngine.Debug","targetTypeName":"UnityEngine.Debug","$version":"A"},"defaultValues":{"%context":null},"position":{"x":-360.0,"y":-322.0},"guid":"ed6c4643-cc16-4d30-a651-fa7954159ded","$version":"A","$type":"Bolt.InvokeMember","$id":"17"},{"sourceUnit":{"$ref":"17"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"exit","guid":"4051acc5-d7f6-4258-94b6-fd67f0b8795b","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"enter","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"217cf0e4-178c-4449-b805-24cd734e1369","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"message","destinationUnit":{"$ref":"17"},"destinationKey":"%message","guid":"c90c0539-aa67-4508-bf63-60f97162d99a","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"context","destinationUnit":{"$ref":"17"},"destinationKey":"%context","guid":"c619cfa8-f82d-4109-bdf7-e936aae4d20c","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

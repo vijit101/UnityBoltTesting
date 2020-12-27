@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Vector3IsPerpendicular
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":"Enter","summary":"The
+      input control enter","hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":"Exit","summary":"","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"vector1","label":"First
+      Vector","summary":"The first input vector","hideLabel":false},{"hasDefaultValue":true,"defaultValue":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"_type":"UnityEngine.Vector3","key":"vector2","label":"Second
+      Vector","summary":"The second input vector","hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Boolean","key":"result","label":"Result","summary":null,"hideLabel":false}],"title":"Vector3
+      Is Perpendicular","summary":"Check if two vector3 is perpendicular","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-258.0,"y":-112.0},"guid":"6c322615-37d9-4ef2-ab4d-ac646ad3f804","$version":"A","$type":"Bolt.GraphInput","$id":"14"},{"defaultValues":{},"position":{"x":217.0,"y":-111.0},"guid":"eb827ba1-856d-4d68-8d44-97ffa5a37edb","$version":"A","$type":"Bolt.GraphOutput","$id":"16"},{"chainable":false,"member":{"name":"Dot","parameterTypes":["UnityEngine.Vector3","UnityEngine.Vector3"],"targetType":"UnityEngine.Vector3","targetTypeName":"UnityEngine.Vector3","$version":"A"},"defaultValues":{"%lhs":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%rhs":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":-97.0,"y":54.0},"guid":"544c813c-f359-4b72-8454-be14d7c098b7","$version":"A","$type":"Bolt.InvokeMember","$id":"18"},{"chainable":false,"member":{"name":"Equals","parameterTypes":["System.Object"],"targetType":"System.Single","targetTypeName":"System.Single","$version":"A"},"defaultValues":{"target":{"$content":0.0,"$type":"System.Single"}},"position":{"x":55.0,"y":35.0},"guid":"5b80eecb-8323-4440-8e3c-8b8b1c818cd3","$version":"A","$type":"Bolt.InvokeMember","$id":"21"},{"sourceUnit":{"$ref":"14"},"sourceKey":"enter","destinationUnit":{"$ref":"16"},"destinationKey":"exit","guid":"1dd1c981-6c6b-42cf-b1a2-70f4eadd1d8c","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"result","destinationUnit":{"$ref":"21"},"destinationKey":"%obj","guid":"c86dae26-6add-4850-a84f-8fc3b05ba3a0","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"vector1","destinationUnit":{"$ref":"18"},"destinationKey":"%lhs","guid":"4b17ccd0-76b5-4eee-b371-f31f06f1e9d5","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"vector2","destinationUnit":{"$ref":"18"},"destinationKey":"%rhs","guid":"012a7de3-fb2f-4c7b-b5c3-29c34eeff5ad","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"result","guid":"1e3ad902-174e-406e-b806-ca823399fbf0","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
