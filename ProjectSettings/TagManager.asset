@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Platform
+  - Projectile
+  - Key
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,11 +17,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Platforms
+  - Background
+  - Enemies
+  - PlayerInvincible
   - 
   - 
   - 
